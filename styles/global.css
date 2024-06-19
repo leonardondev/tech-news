@@ -40,21 +40,32 @@ h1, h2, h3 {
   font: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 i {
   font-size: 20px;
-}
-
-/* utility-first */
-.grid {
-  display: grid;
-}
-
-.grid-col {
-  grid-auto-flow: column;
 }
 
 .container {
   max-width: 1280px;
   padding-inline: 32px;
   margin-inline: auto;
+}
+
+main {
+  margin-top: 40px;
+}
+
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);
+  font: 500 10px/1.2 var(--font-family);
+  color: var(--text-color-primary);
+  padding: 4px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
