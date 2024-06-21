@@ -34,3 +34,41 @@
   }
 }
 
+section header {
+  border-top: 1px solid var(--stroke-color);
+  padding-block: 12px 24px;
+  font: var(--text-span);
+
+  a {
+    justify-self: end; 
+     display: flex;
+     align-items: center;
+     gap: 4px;
+  }
+}
+
+#weekly {
+  &>div {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 24px;
+  }
+
+  figure {
+    position: relative;
+
+    .content-tag {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+    }
+
+    p{
+      margin-top: 8px;
+    }
+  }
+
+  img {
+    height: 160px;
+    object-fit: cover;
+  }
+}
