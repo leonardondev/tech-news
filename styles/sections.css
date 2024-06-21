@@ -1,4 +1,6 @@
 #featured {
+  grid-area: featured;
+
   img {
     height: 100%;
     object-fit: cover;
@@ -48,6 +50,8 @@ section header {
 }
 
 #weekly {
+  grid-area: weekly;
+
   &>div {
     grid-template-columns: repeat(4, 1fr);
     padding-bottom: 24px;
@@ -69,6 +73,45 @@ section header {
 
   img {
     height: 160px;
+    object-fit: cover;
+  }
+}
+
+#ai {
+  grid-area: ai;
+
+  img {
+    width: 176px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-block: 8px 4px;
+  }
+
+  p {
+    color: var(--text-color-secondary)
+  }
+
+}
+
+#ads {
+  width: 100%;
+  object-fit: cover;
+}
+
+#more {
+  grid-area: aside;
+  margin-top: 32px;
+
+  h3 {
+    margin-top: 8px
+  }
+
+  img {
+    width: 72px;
+    aspect-ratio: 1/1;
     object-fit: cover;
   }
 }
